@@ -20,7 +20,11 @@
     "no-unused-variable": true,
     "no-var-before-return": true,
     "prefer-const-enum": true,
-    "prefer-while": true
+    "prefer-while": true,
+    "curly": [true, "ignore-same-line"],
+    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
+    "no-submodule-imports": false,
+    "prefer-for-of": false
   },
   "jsRules": {
     "arrow-parens": [true, "ban-single-arg-parens"],
@@ -37,6 +41,7 @@
     "no-unused-expression": true,
     "no-var-before-return": true,
     "prefer-const-enum": true,
-    "prefer-while": true
+    "prefer-while": true,
+    "prefer-for-of": false
   }
 }
