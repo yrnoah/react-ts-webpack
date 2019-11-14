@@ -26,6 +26,7 @@ const config: webpack.Configuration = {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
           chunks: 'initial',
+          priority: -10,
           // reuseExistingChunk: true,
         },
       },
@@ -79,7 +80,7 @@ const config: webpack.Configuration = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/index.html'),
       filename: path.join(__dirname, 'dist/index.html'),
-      chunksSortMode: 'none',
+      chunksSortMode: 'auto',
       minify: isProd ? {
         removeComments: true,
         useShortDoctype: true,
